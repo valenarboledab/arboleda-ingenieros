@@ -245,6 +245,52 @@ details p{color:var(--suave);margin-top:10px;font-size:.9rem}
 .faq{margin-top:40px}
 .faq h3{font-size:1.3rem;margin:10px 0 18px}
 
+
+/* ===== CONTACTO: banda 1600x900 escalada ===== */
+#contacto{padding-top:78px}
+.c4f{position:relative;width:100%;aspect-ratio:1600/900;overflow:hidden;background:var(--bg)}
+.c4{position:absolute;top:0;left:0;width:1600px;height:900px;transform-origin:top left;overflow:hidden;background:var(--bg);color:#fff;isolation:isolate}
+.c4__glow{position:absolute;top:-230px;left:-300px;width:1080px;height:1080px;filter:blur(20px);
+ background:radial-gradient(50% 50% at 50% 50%,rgba(224,58,44,.42) 0%,rgba(200,52,36,.22) 30%,rgba(120,30,20,.11) 52%,rgba(0,0,0,0) 72%)}
+.c4__blob{position:absolute;top:322px;left:1188px;width:330px;height:300px;filter:blur(26px);background:
+ radial-gradient(38% 26% at 44% 12%,rgba(240,106,44,.95) 0%,rgba(240,106,44,0) 72%),
+ radial-gradient(34% 24% at 56% 34%,rgba(248,239,233,.95) 0%,rgba(248,239,233,0) 70%),
+ radial-gradient(36% 24% at 46% 56%,rgba(224,58,44,.92) 0%,rgba(224,58,44,0) 72%),
+ radial-gradient(34% 26% at 58% 76%,rgba(150,30,24,.85) 0%,rgba(150,30,24,0) 74%),
+ radial-gradient(30% 22% at 40% 90%,rgba(255,160,90,.7) 0%,rgba(255,160,90,0) 76%)}
+.c4__grain{position:absolute;inset:0;opacity:.11;mix-blend-mode:overlay;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E")}
+.c4__logo{position:absolute;top:40px;left:132px;z-index:3;font-size:28px;font-weight:900;letter-spacing:.02em;color:var(--rojo)}
+.c4__logo sup{margin-left:4px;font-size:.42em;font-weight:800;color:var(--naranja)}
+.c4__title{position:absolute;top:128px;left:132px;z-index:2;margin:0;font-size:96px;font-weight:900;line-height:1.08;letter-spacing:-.03em}
+.c4__dots{position:absolute;top:400px;left:138px;z-index:2;overflow:visible}
+.c4__details{position:absolute;top:150px;left:900px;z-index:2;display:flex;flex-direction:column;gap:68px}
+.c4__blockHead{display:flex;align-items:center;gap:14px}
+.c4__blockIcon{flex:0 0 auto;width:32px;height:32px;color:var(--naranja)}
+.c4__blockTitle{margin:0;font-size:30px;font-weight:800;letter-spacing:-.025em}
+.c4__blockBody{margin-top:12px;padding-left:46px}
+.c4__blockLine{margin:0;font-size:16px;line-height:1.7;color:rgba(255,255,255,.78)}
+.c4__blockLine a{color:#fff;font-weight:700}
+.c4__blockLine a:hover{color:var(--naranja)}
+.c4__socials{display:flex;gap:12px;align-items:center}
+.c4__social{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--grad);color:#fff;transition:transform .18s}
+.c4__social:hover{transform:translateY(-2px)}
+.c4__social svg{width:18px;height:18px}
+.c4__outro{position:absolute;top:700px;left:132px;z-index:2;margin:0;font-size:60px;font-weight:900;line-height:1.1;letter-spacing:-.03em}
+.c4__ticks{position:absolute;top:712px;left:890px;z-index:2;overflow:visible}
+.c4after{padding-top:50px}
+@media (max-width:760px){
+  #contacto{padding-top:72px}
+  .c4f{aspect-ratio:auto}
+  .c4{position:relative;width:auto;height:auto;transform:none!important;padding:36px 20px 44px}
+  .c4__logo,.c4__dots,.c4__ticks{display:none}
+  .c4__title,.c4__details,.c4__outro{position:relative;top:auto;left:auto}
+  .c4__title{font-size:52px}
+  .c4__details{margin:36px 0;gap:30px}
+  .c4__blockTitle{font-size:22px}
+  .c4__blockBody{padding-left:0}
+  .c4__outro{font-size:34px}
+  .c4__blob{top:auto;bottom:-60px;left:auto;right:-140px;width:260px;height:240px}
+}
 footer{border-top:1px solid var(--linea);padding:26px 0;color:var(--suave);font-size:.8rem}
 footer a:hover{color:#fff}
 .legal{max-width:820px}
@@ -416,19 +462,42 @@ footer a:hover{color:#fff}
 
 <!-- ============ CONTACTO ============ -->
 <section class="view" id="contacto">
-  <div class="wrap">
-    <div class="vh">
-      <div><span class="tag">Contacto</span><h1>¿Tienes un proyecto<br><span class="grad-txt">en mente?</span></h1></div>
-      <p>Cuéntanos sobre tu obra y te enviamos una propuesta a la medida.</p>
+  <div class="c4f" id="c4f">
+    <div class="c4" id="c4">
+      <div class="c4__glow" aria-hidden="true"></div>
+      <div class="c4__blob" aria-hidden="true"></div>
+      <div class="c4__grain" aria-hidden="true"></div>
+      <h2 class="c4__title">Hablemos<br>de tu <span class="grad-txt">obra.</span></h2>
+      <svg class="c4__dots" id="c4dots" aria-hidden="true"></svg>
+      <div class="c4__details">
+        <div class="c4__block">
+          <div class="c4__blockHead"><svg class="c4__blockIcon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7.4 4h5l2.5 6.3-3.3 2.1a15.4 15.4 0 0 0 7.6 7.6l2.1-3.3L27.6 19v5a3 3 0 0 1-3.3 3A23.7 23.7 0 0 1 4.4 7.3 3 3 0 0 1 7.4 4Z"/></svg><h3 class="c4__blockTitle">WhatsApp</h3></div>
+          <div class="c4__blockBody">
+            <p class="c4__blockLine"><a href="https://wa.me/573116351574" target="_blank" rel="noopener">+57 311 635 1574</a> · Ing. Carlos Julio Arboleda</p>
+            <p class="c4__blockLine"><a href="https://wa.me/573017007518" target="_blank" rel="noopener">+57 301 700 7518</a> · Ing. Julián David Arboleda</p>
+          </div>
+        </div>
+        <div class="c4__block">
+          <div class="c4__blockHead"><svg class="c4__blockIcon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 29s10-8.4 10-16A10 10 0 0 0 6 13c0 7.6 10 16 10 16Z"/><circle cx="16" cy="13" r="3.9"/></svg><h3 class="c4__blockTitle">Oficina</h3></div>
+          <div class="c4__blockBody">
+            <p class="c4__blockLine">Armenia, Quindío</p>
+            <p class="c4__blockLine"><a href="https://www.google.com/maps/search/?api=1&query=La+Plazuela+Armenia+Quindio" target="_blank" rel="noopener">La Plazuela, Apto 703</a></p>
+          </div>
+        </div>
+        <div class="c4__block">
+          <div class="c4__blockHead"><svg class="c4__blockIcon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13.6 16.4 4c1.9 0 3.4 1.6 3.4 3.5v5h6.4a3 3 0 0 1 2.9 3.7l-2.1 9A3 3 0 0 1 24 27.5h-9.6a4 4 0 0 1-4-3.4"/><rect x="3.4" y="13" width="6.6" height="14.5" rx="1.6"/></svg><h3 class="c4__blockTitle">Síguenos</h3></div>
+          <div class="c4__blockBody">
+            <div class="c4__socials"><a class="c4__social" href="https://www.instagram.com/arboledaingenieros/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="4" y="4" width="16" height="16" rx="4.6"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.9" cy="7.1" r="1.05" fill="currentColor" stroke="none"/></svg></a><span class="c4__blockLine">@arboledaingenieros</span></div>
+          </div>
+        </div>
+      </div>
+      <h2 class="c4__outro">¿Qué vamos a<br>construir juntos?</h2>
+      <svg class="c4__ticks" id="c4ticks" aria-hidden="true"></svg>
     </div>
+  </div>
+  <div class="wrap c4after">
     <div class="cgrid">
       <div>
-        <div class="cards">
-          <a class="ccard" href="https://www.google.com/maps/search/?api=1&query=La+Plazuela+Armenia+Quindio" target="_blank" rel="noopener"><div class="ic"><svg width="22" height="22" style="color:#F06A2C"><use href="#pin"/></svg></div><div><small>Oficina</small><b>La Plazuela, Apto 703 – Armenia, Quindío</b></div></a>
-          <a class="ccard" href="https://wa.me/573116351574" target="_blank" rel="noopener"><div class="ic" style="background:#25D366"><svg width="22" height="22"><use href="#wa"/></svg></div><div><small>Ing. Carlos Julio Arboleda</small><b>+57 311 635 1574</b></div></a>
-          <a class="ccard" href="https://wa.me/573017007518" target="_blank" rel="noopener"><div class="ic" style="background:#25D366"><svg width="22" height="22"><use href="#wa"/></svg></div><div><small>Ing. Julián David Arboleda</small><b>+57 301 700 7518</b></div></a>
-          <a class="ccard" href="https://www.instagram.com/arboledaingenieros/" target="_blank" rel="noopener"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F06A2C" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#F06A2C"/></svg></div><div><small>Instagram</small><b>@arboledaingenieros</b></div></a>
-        </div>
         <div class="faq">
           <span class="tag">Preguntas frecuentes</span>
           <h3>Resolvemos tus dudas</h3>
@@ -1594,6 +1663,19 @@ document.getElementById('form').onsubmit=e=>{
   const w=window.open(url,'_blank');
   if(!w){try{window.top.location.href=url}catch(err){location.href=url}}
 };
+
+/* ---------- CONTACTO: escala de la banda y texturas ---------- */
+(()=>{const f=document.getElementById('c4f'),c=document.getElementById('c4'),NS='http://www.w3.org/2000/svg';
+  const fit=()=>{const w=f.getBoundingClientRect().width;if(w)c.style.transform=`scale(${w/1600})`};
+  new ResizeObserver(fit).observe(f);fit();
+  const mk=(svg,tag,a)=>{const e=document.createElementNS(NS,tag);for(const k in a)e.setAttribute(k,a[k]);svg.appendChild(e)};
+  const d=document.getElementById('c4dots');d.setAttribute('width',11*48+4);d.setAttribute('height',8*21+4);
+  for(let r=0;r<9;r++)for(let k=0;k<12;k++)mk(d,'circle',{cx:k*48+2,cy:r*21+2,r:1.6,fill:'#F8EFE9',opacity:(.16+.3*Math.abs(Math.sin(k*1.7+r*.9))).toFixed(3)});
+  const t=document.getElementById('c4ticks'),L=22;t.setAttribute('width',8*70+L+8);t.setAttribute('height',2*48+L+8);
+  for(let r=0;r<3;r++)for(let k=0;k<9;k++){const cx=k*70+L/2+4,cy=r*48+L/2+4;
+    mk(t,'line',{x1:cx-L/2,y1:cy,x2:cx+L/2,y2:cy,stroke:k%3===0?'#F06A2C':'#ffffff','stroke-width':1.6,'stroke-linecap':'round',
+      opacity:(.42+.28*Math.abs(Math.cos(k*.8+r))).toFixed(3),transform:`rotate(${-62+k*27+r*11} ${cx} ${cy})`})}
+})();
 document.getElementById('y').textContent=new Date().getFullYear();
 ir();
 </script>
