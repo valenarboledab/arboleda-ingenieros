@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arboleda Ingenieros S.A.S. | Ingeniería estructural, supervisión técnica e interventoría</title>
+<meta name="description" content="Arboleda Ingenieros S.A.S.: diseño y cálculo estructural, revisión estructural independiente, supervisión técnica e interventoría en Armenia, Quindío. Más de 35 años de trayectoria.">
+<meta name="theme-color" content="#0D0E12">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:title" content="Arboleda Ingenieros S.A.S. | Ingeniería estructural">
+<meta property="og:description" content="Diseñamos con precisión. Construimos con confianza. Ingeniería estructural, supervisión técnica e interventoría en Armenia, Quindío.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 48'%3E%3Crect width='40' height='48' rx='8' fill='%230D0E12'/%3E%3Cpath d='M6 44V17L20 6l14 11v27M13 44l7-22 7 22M15.5 36h9' fill='none' stroke='%23F06A2C' stroke-width='3.4' stroke-linejoin='round'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Arboleda Ingenieros S.A.S.",
+"description":"Ingeniería estructural, revisión estructural independiente, supervisión técnica, interventoría y consultoría.",
+"address":{"@type":"PostalAddress","streetAddress":"La Plazuela, Apto 703","addressLocality":"Armenia","addressRegion":"Quindío","addressCountry":"CO"},
+"telephone":"+573116351574","areaServed":["Quindío","Risaralda","Eje Cafetero"],
+"sameAs":["https://www.instagram.com/arboledaingenieros/"],
+"employee":[{"@type":"Person","name":"Carlos Julio Arboleda","jobTitle":"Ingeniero Civil, especialista en ingeniería estructural"},{"@type":"Person","name":"Julián David Arboleda","jobTitle":"Ingeniero Civil"}]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --rojo:#E03A2C;--naranja:#F06A2C;--crema:#F8EFE9;
+  --bg:#0D0E12;--panel:#16181E;--panel2:#1F222A;--linea:rgba(255,255,255,.08);
+  --txt:#F4F4F6;--suave:#A3A6AF;--r:18px;
+  --grad:linear-gradient(135deg,var(--rojo),var(--naranja));
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{font-family:'Montserrat',system-ui,sans-serif;background:var(--bg);color:var(--txt);line-height:1.55;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+.grad-txt{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tag{display:inline-flex;align-items:center;gap:8px;color:var(--naranja);font-weight:700;letter-spacing:2.5px;font-size:.72rem;text-transform:uppercase}
+.tag::before{content:"";width:22px;height:2px;background:var(--grad)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:999px;font-weight:700;font-size:.92rem;transition:.25s}
+.btn-p{background:var(--grad);color:#fff;box-shadow:0 10px 30px rgba(224,58,44,.35)}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(224,58,44,.5)}
+.btn-g{border:1.5px solid rgba(255,255,255,.35);color:#fff;backdrop-filter:blur(6px)}
+.btn-g:hover{background:#fff;color:var(--bg)}
+
+/* ===== NAV ===== */
+header{position:fixed;inset:0 0 auto 0;z-index:80;transition:.3s;background:linear-gradient(180deg,rgba(13,14,18,.75),rgba(13,14,18,0))}
+header.solid{background:rgba(13,14,18,.85);backdrop-filter:blur(14px);border-bottom:1px solid var(--linea)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo b{display:block;font-size:1.4rem;font-weight:900;letter-spacing:1.5px;line-height:1;color:var(--rojo)}
+.logo small{font-size:.66rem;color:var(--suave);letter-spacing:.6px}
+.tabs{display:flex;gap:4px;background:rgba(13,14,18,.55);backdrop-filter:blur(10px);border:1px solid var(--linea);padding:5px;border-radius:999px}
+.tabs a{padding:9px 18px;border-radius:999px;font-size:.86rem;font-weight:600;color:#d0d2d8;transition:.25s}
+.tabs a:hover{color:#fff}
+.tabs a.act{background:var(--grad);color:#fff}
+
+/* bottom bar (móvil) */
+.bbar{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:90;background:rgba(22,24,30,.92);backdrop-filter:blur(14px);border:1px solid var(--linea);border-radius:20px;padding:8px;justify-content:space-around}
+.bbar a{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:.64rem;font-weight:600;color:var(--suave);padding:6px 8px;border-radius:12px;min-width:58px}
+.bbar a.act{color:#fff;background:rgba(240,106,44,.16)}
+.bbar a.act svg{stroke:var(--naranja)}
+
+/* ===== VISTAS ===== */
+.view{display:none;min-height:100vh;padding:110px 0 60px;animation:entra .55s cubic-bezier(.2,.7,.2,1)}
+.view.on{display:block}
+@keyframes entra{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.vh{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:40px;flex-wrap:wrap}
+.vh h1{font-size:clamp(2rem,4.5vw,3.4rem);font-weight:900;line-height:1.05;margin-top:12px;letter-spacing:-.5px}
+.vh p{color:var(--suave);max-width:440px}
+
+/* ===== HOME ===== */
+#inicio{padding:0;position:relative;overflow:hidden}
+.slides{position:absolute;inset:0 0 0 38%;background:
+ radial-gradient(circle at 60% 45%,rgba(240,106,44,.22),transparent 55%),
+ repeating-linear-gradient(0deg,rgba(255,255,255,.06) 0 1px,transparent 1px 44px),
+ repeating-linear-gradient(90deg,rgba(255,255,255,.06) 0 1px,transparent 1px 44px)}
+.slides svg{position:absolute;right:6%;top:50%;transform:translateY(-50%);width:min(46vw,620px);opacity:.5}
+@media (max-width:760px){.slides{left:0}}
+.slides div{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transform:scale(1.08);transition:opacity 1.4s ease,transform 7s ease}
+.slides div.on{opacity:1;transform:scale(1)}
+.velo{position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,var(--bg) 40%,rgba(13,14,18,.5) 62%,rgba(13,14,18,.1) 100%),linear-gradient(0deg,var(--bg) 0%,transparent 35%)}
+@media (max-width:760px){.velo{background:linear-gradient(0deg,var(--bg) 15%,rgba(13,14,18,.8) 60%,rgba(13,14,18,.65))}}
+.home{position:relative;z-index:2;min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding-top:100px;padding-bottom:40px}
+.home h1{font-size:clamp(2.4rem,5.4vw,4.6rem);font-weight:900;line-height:.98;letter-spacing:-1.5px;margin:18px 0 22px;max-width:820px}
+.home p.lead{font-size:1.05rem;color:#cfd1d7;max-width:520px;margin-bottom:28px}
+.home .cta{display:flex;gap:14px;flex-wrap:wrap}
+.actual{margin-top:30px;display:flex;align-items:center;gap:14px;font-size:.82rem;color:var(--suave)}
+.dots{display:flex;gap:6px}
+.dots button{width:26px;height:4px;border-radius:4px;background:rgba(255,255,255,.25);transition:.3s}
+.dots button.on{background:var(--naranja);width:44px}
+.accesos{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
+.acc{background:rgba(22,24,30,.7);backdrop-filter:blur(10px);border:1px solid var(--linea);border-radius:var(--r);padding:22px;display:flex;flex-direction:column;gap:14px;transition:.3s;position:relative;overflow:hidden}
+.acc::after{content:"→";position:absolute;right:20px;top:20px;font-size:1.2rem;color:var(--suave);transition:.3s}
+.acc:hover{border-color:rgba(240,106,44,.6);transform:translateY(-4px)}
+.acc:hover::after{color:var(--naranja);transform:translateX(4px)}
+.acc .ic{width:46px;height:46px;border-radius:14px;background:rgba(240,106,44,.14);display:flex;align-items:center;justify-content:center}
+.acc b{font-size:1rem}
+.acc span{font-size:.8rem;color:var(--suave)}
+
+/* ===== SERVICIOS ===== */
+.svc-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:24px}
+.svc-list{display:flex;flex-direction:column;gap:12px}
+.svc{background:var(--panel);border:1px solid var(--linea);border-radius:var(--r);padding:22px 24px;display:flex;gap:18px;align-items:center;text-align:left;transition:.3s;width:100%}
+.svc:hover{border-color:rgba(255,255,255,.2)}
+.svc.on{background:var(--grad);border-color:transparent}
+.svc .n{font-size:1.6rem;font-weight:900;opacity:.35;width:44px}
+.svc.on .n{opacity:.8}
+.svc b{display:block;font-size:1.08rem}
+.svc small{color:var(--suave);font-size:.82rem}
+.svc.on small{color:rgba(255,255,255,.85)}
+.svc-det{background:var(--panel);border:1px solid var(--linea);border-radius:var(--r);padding:36px;position:relative;overflow:hidden}
+.svc-det::before{content:"";position:absolute;right:-80px;top:-80px;width:260px;height:260px;border:40px solid var(--rojo);opacity:.08;transform:rotate(45deg)}
+.svc-det h2{font-size:1.7rem;font-weight:800;margin:14px 0 12px}
+.svc-det p{color:var(--suave);margin-bottom:20px}
+.svc-det ul{list-style:none;display:grid;gap:10px;margin-bottom:28px}
+.svc-det li{display:flex;gap:12px;align-items:flex-start;font-weight:500;font-size:.94rem}
+.svc-det li::before{content:"";flex-shrink:0;width:20px;height:20px;margin-top:2px;border-radius:50%;background:var(--grad) center/12px no-repeat;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5'%3E%3Cpath d='M5 12l5 5L19 7'/%3E%3C/svg%3E"),var(--grad)}
+.fade{animation:entra .45s ease}
+.proceso{margin-top:60px}
+.proceso h3{font-size:1.3rem;margin:10px 0 22px}
+.pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.paso{background:var(--panel);border:1px solid var(--linea);border-radius:var(--r);padding:22px;position:relative}
+.paso i{font-style:normal;font-size:2rem;font-weight:900;line-height:1}
+.paso b{display:block;margin:10px 0 6px}
+.paso span{font-size:.84rem;color:var(--suave)}
+
+/* ===== PROYECTOS ===== */
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{padding:10px 18px;border-radius:999px;border:1px solid var(--linea);font-size:.84rem;font-weight:600;color:var(--suave);transition:.25s}
+.chip:hover{color:#fff;border-color:rgba(255,255,255,.3)}
+.chip.on{background:#fff;color:var(--bg);border-color:#fff}
+.pgrid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+.pc{grid-column:span 4;position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/5;min-height:320px;cursor:pointer;background:var(--panel);transition:transform .4s,opacity .4s}
+.pc.big{grid-column:span 8;aspect-ratio:auto}
+.pc img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1),filter .5s}
+.pc:hover img{transform:scale(1.08);filter:brightness(.8)}
+.pc .ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,14,18,0) 35%,rgba(13,14,18,.95));display:flex;flex-direction:column;justify-content:flex-end;padding:26px}
+.pc .cat{align-self:flex-start;background:var(--grad);font-size:.66rem;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:12px}
+.pc h3{font-size:clamp(1.4rem,2.4vw,2.1rem);font-weight:900;line-height:1.05}
+.pc .loc{display:flex;align-items:center;gap:6px;color:#d6d8dd;font-size:.85rem;margin-top:8px}
+.pc .ver{position:absolute;top:20px;right:20px;width:48px;height:48px;border-radius:50%;background:#fff;color:var(--bg);display:flex;align-items:center;justify-content:center;transform:scale(0) rotate(-45deg);transition:.4s cubic-bezier(.3,1.5,.5,1)}
+.pc:hover .ver{transform:scale(1) rotate(0)}
+.pc .num{position:absolute;top:18px;left:22px;font-weight:900;font-size:.9rem;color:rgba(255,255,255,.7)}
+.buscar{display:flex;flex-direction:column;gap:8px;min-width:min(100%,360px)}
+.buscar span{font-size:.78rem;color:var(--suave)}
+#chips{margin-bottom:28px}
+.chip b{opacity:.55;font-weight:700;margin-left:6px}
+.grupo{margin:34px 0 14px;display:flex;align-items:baseline;gap:12px}
+.grupo h2{font-size:1.25rem;font-weight:800}
+.grupo span{color:var(--suave);font-size:.82rem}
+.lista{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.pj{background:var(--panel);border:1px solid var(--linea);border-radius:var(--r);padding:20px 22px;text-align:left;display:flex;flex-direction:column;gap:10px;transition:.25s;width:100%}
+.pj:hover{border-color:rgba(240,106,44,.6);transform:translateY(-3px)}
+.pj .cats{display:flex;gap:6px;flex-wrap:wrap}
+.pj .cats i{font-style:normal;font-size:.62rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--naranja);background:rgba(240,106,44,.12);padding:4px 9px;border-radius:999px}
+.pj h3{font-size:1.06rem;font-weight:800;line-height:1.25}
+.pj .meta{display:flex;gap:6px 14px;flex-wrap:wrap;font-size:.8rem;color:var(--suave)}
+.pj .meta b{color:#fff;font-weight:700}
+.pj .pie{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:.78rem;color:var(--suave)}
+.est{background:rgba(37,211,102,.14);color:#4be38a;font-weight:700;padding:4px 10px;border-radius:999px;font-size:.7rem;white-space:nowrap}
+.vacio{color:var(--suave);padding:40px 0}
+@media (max-width:1000px){.lista{grid-template-columns:1fr 1fr}}
+@media (max-width:760px){.lista{grid-template-columns:1fr}}
+.ph{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:
+ linear-gradient(135deg,rgba(224,58,44,.22),rgba(240,106,44,.06) 60%,transparent),
+ repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 1px,transparent 1px 32px),
+ repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 32px),var(--panel2);
+ font-size:4.4rem;font-weight:900;color:rgba(255,255,255,.1);letter-spacing:-2px;transition:transform .8s}
+.pc:hover .ph{transform:scale(1.05)}
+.mimg .ph{min-height:320px;font-size:6rem}
+
+/* Modal proyecto */
+.modal{position:fixed;inset:0;z-index:120;background:rgba(5,5,8,.88);backdrop-filter:blur(10px);display:none;align-items:center;justify-content:center;padding:24px}
+.modal.on{display:flex;animation:entra .35s ease}
+.mbox{background:var(--panel);border:1px solid var(--linea);border-radius:26px;overflow:hidden;display:grid;grid-template-columns:1fr;max-width:680px;width:100%;max-height:90vh}
+.mimg{position:relative;background:#000}
+.mimg img{width:100%;height:100%;object-fit:cover;max-height:90vh}
+.minfo{padding:40px;overflow:auto;display:flex;flex-direction:column}
+.minfo h2{font-size:clamp(1.8rem,3.4vw,2.8rem);font-weight:900;line-height:1.05;margin:14px 0 8px}
+.minfo .loc{color:var(--suave);display:flex;gap:6px;align-items:center;margin-bottom:22px}
+.minfo p{color:#cfd1d7;margin-bottom:22px}
+.fichas{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:28px}
+.ficha{background:var(--panel2);border-radius:14px;padding:14px 16px}
+.ficha small{display:block;font-size:.68rem;letter-spacing:1px;text-transform:uppercase;color:var(--suave);margin-bottom:4px}
+.ficha b{font-size:.92rem}
+.mnav{margin-top:auto;display:flex;gap:10px;align-items:center}
+.circ{width:48px;height:48px;border-radius:50%;border:1px solid var(--linea);display:flex;align-items:center;justify-content:center;transition:.2s}
+.circ:hover{background:#fff;color:var(--bg)}
+.cerrar{position:absolute;top:18px;right:18px;z-index:3;width:44px;height:44px;border-radius:50%;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:#fff}
+
+/* ===== NOSOTROS / EQUIPO ===== */
+.nos-top{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;margin-bottom:24px}
+.caja{background:var(--panel);border:1px solid var(--linea);border-radius:var(--r);padding:34px}
+.caja h2{font-size:1.6rem;font-weight:800;margin:12px 0}
+.caja p{color:var(--suave);margin-bottom:12px}
+.valores{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.valor{background:var(--panel2);border-radius:14px;padding:18px}
+.valor b{display:block;font-size:1.5rem;font-weight:900}
+.valor span{font-size:.8rem;color:var(--suave)}
+.eq-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.eq{position:relative;background:var(--panel);border:1px solid var(--linea);border-radius:24px;padding:34px;overflow:hidden;display:flex;gap:24px;align-items:center;transition:.3s}
+.eq:hover{border-color:rgba(240,106,44,.5)}
+.eq::before{content:"";position:absolute;right:-50px;bottom:-50px;width:180px;height:180px;border-radius:50%;background:var(--grad);opacity:.1}
+.avatar{width:150px;height:190px;flex-shrink:0;border-radius:24px;overflow:hidden;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:2rem;font-weight:900;color:#fff;box-shadow:0 14px 30px rgba(224,58,44,.35)}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.eq{align-items:flex-start}
+.eq h3{font-size:1.35rem;font-weight:800;line-height:1.15}
+.eq ul{list-style:none;display:grid;gap:6px;margin:0 0 18px;font-size:.86rem;color:#cfd1d7}
+.eq ul li b{color:#fff;font-weight:600}
+.exp{display:inline-block;background:rgba(240,106,44,.14);color:var(--naranja);font-weight:800;font-size:.78rem;padding:5px 12px;border-radius:999px;margin-bottom:12px}
+.aliado{margin-top:24px;display:flex;gap:22px;align-items:center;background:var(--panel);border:1px solid var(--linea);border-radius:var(--r);padding:26px 30px}
+.aliado .ic{width:56px;height:56px;flex-shrink:0;border-radius:16px;background:rgba(240,106,44,.14);display:flex;align-items:center;justify-content:center;font-weight:900;color:var(--naranja)}
+.aliado b{display:block;font-size:1.05rem;margin-bottom:4px}
+.aliado p{color:var(--suave);font-size:.9rem}
+.nota{font-size:.72rem;color:var(--suave);margin-top:12px}
+.eq .rol{display:block;color:var(--naranja);font-size:.74rem;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;margin:6px 0 16px}
+.wa-btn{display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;font-weight:700;font-size:.86rem;padding:10px 18px;border-radius:999px;transition:.2s}
+.wa-btn:hover{transform:translateY(-2px)}
+
+/* ===== CONTACTO ===== */
+.cgrid{display:grid;grid-template-columns:1fr 1.1fr;gap:24px}
+.cards{display:grid;gap:12px}
+.ccard{background:var(--panel);border:1px solid var(--linea);border-radius:var(--r);padding:20px 22px;display:flex;gap:16px;align-items:center;transition:.25s}
+a.ccard:hover{border-color:rgba(240,106,44,.6);transform:translateX(4px)}
+.ccard .ic{width:48px;height:48px;border-radius:14px;background:rgba(240,106,44,.14);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ccard small{display:block;color:var(--suave);font-size:.74rem;text-transform:uppercase;letter-spacing:1px}
+.ccard b{font-size:.98rem}
+form{background:var(--panel);border:1px solid var(--linea);border-radius:24px;padding:32px}
+form h3{font-size:1.3rem;margin-bottom:20px}
+.fila{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.campo{margin-bottom:14px}
+label{display:block;font-size:.76rem;font-weight:600;color:var(--suave);margin-bottom:6px;letter-spacing:.4px}
+input,select,textarea{width:100%;background:var(--panel2);border:1.5px solid transparent;border-radius:12px;padding:13px 15px;color:var(--txt);font:inherit;font-size:.93rem;transition:.2s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--naranja)}
+select option{background:var(--panel2)}
+form .btn{width:100%;justify-content:center;margin-top:6px}
+details{background:var(--panel);border:1px solid var(--linea);border-radius:14px;padding:18px 20px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:16px;font-size:.94rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--naranja);font-size:1.3rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--suave);margin-top:10px;font-size:.9rem}
+.faq{margin-top:40px}
+.faq h3{font-size:1.3rem;margin:10px 0 18px}
+
+footer{border-top:1px solid var(--linea);padding:26px 0;color:var(--suave);font-size:.8rem}
+footer a:hover{color:#fff}
+.legal{max-width:820px}
+.legal h1{font-size:clamp(1.9rem,4vw,2.8rem);font-weight:900;line-height:1.1;margin:12px 0 6px}
+.legal .vig{color:var(--suave);font-size:.85rem;margin-bottom:30px}
+.legal h2{font-size:1.1rem;font-weight:800;margin:28px 0 10px}
+.legal p,.legal li{color:#cfd1d7;font-size:.95rem;margin-bottom:10px}
+.legal ul{padding-left:20px;margin-bottom:10px}
+.legal a{color:var(--naranja);text-decoration:underline}
+.chk{display:flex;gap:10px;align-items:flex-start;font-size:.78rem;line-height:1.45;margin:4px 0 14px;letter-spacing:0}
+.chk input{width:18px;height:18px;flex-shrink:0;margin-top:1px;accent-color:var(--naranja)}
+.chk a{color:var(--naranja);text-decoration:underline}
+.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+.wa-flot{position:fixed;right:22px;bottom:22px;z-index:85;width:60px;height:60px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px rgba(37,211,102,.4)}
+.wa-flot::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25D366;animation:pulso 2s infinite}
+@keyframes pulso{to{transform:scale(1.6);opacity:0}}
+
+@media (max-width:1000px){
+  .accesos{grid-template-columns:1fr 1fr}
+  .svc-grid,.nos-top,.cgrid,.eq-grid{grid-template-columns:1fr}
+  .pasos{grid-template-columns:1fr 1fr}
+  .pc,.pc.big{grid-column:span 6;aspect-ratio:4/5}
+  .mbox{grid-template-columns:1fr;overflow:auto}
+  .mimg img{max-height:50vh}
+}
+@media (max-width:760px){
+  .tabs,.nav .btn{display:none}
+  .bbar{display:flex}
+  .view{padding:96px 0 120px}
+  .home{padding-bottom:120px}
+  .wa-flot{bottom:96px;right:16px;width:54px;height:54px}
+  .wrap{padding-left:16px;padding-right:16px}
+  .pc,.pc.big{grid-column:span 12}
+  .eq{flex-direction:column;align-items:center;text-align:center}
+  .eq ul{justify-items:center}
+  .aliado{flex-direction:column;text-align:center}
+  .fila,.fichas{grid-template-columns:1fr}
+  .minfo{padding:26px}
+  .modal{padding:12px}
+  .caja,.svc-det,form{padding:24px}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="marca" viewBox="0 0 40 48"><path d="M4 46V16L20 3l16 13v30" fill="none" stroke="#F06A2C" stroke-width="3.4" stroke-linejoin="round"/><path d="M12 46l8-26 8 26M15 37h10" fill="none" stroke="#F06A2C" stroke-width="3.4" stroke-linejoin="round"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><path d="M12 22s8-7.5 8-13a8 8 0 10-16 0c0 5.5 8 13 8 13z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9" r="3" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="#fff" d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></symbol>
+  <symbol id="flecha" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+</svg>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="#inicio" class="logo">
+      <svg width="34" height="40"><use href="#marca"/></svg>
+      <div><b>ARBOLEDA</b><small>Ingenieros S.A.S.</small></div>
+    </a>
+    <nav class="tabs">
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a href="#contacto" class="btn btn-p">Cotizar</a>
+  </div>
+</header>
+
+<!-- ============ INICIO ============ -->
+<main>
+<section class="view" id="inicio">
+  <div class="slides" id="slides" aria-hidden="true"><svg viewBox="0 0 400 400" fill="none" stroke="#F06A2C" stroke-width="2">
+    <path d="M60 360V140l140-90 140 90v220"/><path d="M60 140h280M60 220h280M60 300h280M130 140v220M200 50v310M270 140v220"/>
+    <path d="M60 140l70 80M130 140l70 80M200 140l70 80M270 140l70 80M60 220l70 80M130 220l70 80M200 220l70 80M270 220l70 80" stroke-opacity=".45"/>
+    <path d="M30 360h340" stroke-width="3"/><circle cx="200" cy="50" r="6" fill="#F06A2C"/></svg></div>
+  <div class="velo"></div>
+  <div class="wrap home">
+    <span class="tag">Ingeniería estructural · Armenia, Quindío</span>
+    <h1>Diseñamos con precisión. Construimos con <span class="grad-txt">confianza.</span></h1>
+    <p class="lead">Somos una firma especializada en ingeniería estructural y consultoría técnica. Integramos soluciones funcionales, eficientes y seguras para proyectos residenciales, comerciales e institucionales.</p>
+    <div class="cta">
+      <a href="#proyectos" class="btn btn-p">Ver proyectos <svg width="16" height="16"><use href="#flecha"/></svg></a>
+      <a href="#contacto" class="btn btn-g">Solicitar asesoría</a>
+    </div>
+    <div class="accesos">
+      <a href="#servicios" class="acc"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F06A2C" stroke-width="2"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></div><div><b>Servicios</b><br><span>Diseño, revisión, supervisión e interventoría</span></div></a>
+      <a href="#proyectos" class="acc"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F06A2C" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div><div><b>Proyectos</b><br><span>Edificios, teleféricos y puentes</span></div></a>
+      <a href="#nosotros" class="acc"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F06A2C" stroke-width="2"><circle cx="9" cy="8" r="4"/><path d="M2 21c0-4 3-6 7-6s7 2 7 6M16 4a4 4 0 010 8M22 21c0-3-2-5-4-5.6"/></svg></div><div><b>Nosotros</b><br><span>+35 años de trayectoria</span></div></a>
+      <a href="#contacto" class="acc"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F06A2C" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div><div><b>Contacto</b><br><span>Escríbenos por WhatsApp</span></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICIOS ============ -->
+<section class="view" id="servicios">
+  <div class="wrap">
+    <div class="vh">
+      <div><span class="tag">Servicios</span><h1>Ingeniería de principio<br>a <span class="grad-txt">fin de obra</span></h1></div>
+      <p>Selecciona un servicio para ver en qué consiste y cómo te acompañamos.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-list" id="svcList"></div>
+      <div class="svc-det" id="svcDet"></div>
+    </div>
+    <div class="proceso">
+      <span class="tag">Cómo trabajamos</span>
+      <h3>Un proceso claro en 4 pasos</h3>
+      <div class="pasos">
+        <div class="paso"><i class="grad-txt">01</i><b>Diagnóstico</b><span>Revisamos el proyecto arquitectónico, el estudio de suelos y tus necesidades.</span></div>
+        <div class="paso"><i class="grad-txt">02</i><b>Diseño y cálculo</b><span>Modelamos y diseñamos la estructura con software especializado.</span></div>
+        <div class="paso"><i class="grad-txt">03</i><b>Entrega técnica</b><span>Planos, memorias de cálculo y documentos para licencia.</span></div>
+        <div class="paso"><i class="grad-txt">04</i><b>Acompañamiento</b><span>Supervisión en obra para que se construya lo diseñado.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROYECTOS ============ -->
+<section class="view" id="proyectos">
+  <div class="wrap">
+    <div class="vh">
+      <div><span class="tag">Portafolio</span><h1>Nuestros <span class="grad-txt">proyectos</span></h1></div>
+      <div class="buscar"><input id="q" type="search" placeholder="Buscar proyecto, ciudad o constructora…" aria-label="Buscar proyectos"><span id="cuenta"></span></div>
+    </div>
+    <div class="chips" id="chips"><button class="chip on" data-f="todos">Todos</button></div>
+    <div id="pgrid"></div>
+  </div>
+</section>
+
+<!-- ============ NOSOTROS ============ -->
+<section class="view" id="nosotros">
+  <div class="wrap">
+    <div class="vh">
+      <div><span class="tag">Nosotros</span><h1>Ingeniería con raíces<br>en el <span class="grad-txt">Eje Cafetero</span></h1></div>
+      <p>Ingeniería estructural, supervisión técnica, interventoría y consultoría desde Armenia, Quindío.</p>
+    </div>
+    <div class="nos-top">
+      <div class="caja">
+        <span class="tag">Quiénes somos</span>
+        <h2>Seguridad estructural en zona sísmica</h2>
+        <p>Somos una firma especializada en ingeniería estructural y consultoría técnica. Integramos soluciones funcionales, eficientes y seguras para proyectos residenciales, comerciales e institucionales.</p>
+        <p>Trabajamos en el Quindío, una región de amenaza sísmica alta, bajo la NSR-10. Acompañamos a constructores, arquitectos y propietarios desde el primer cálculo hasta la entrega de la obra.</p>
+      </div>
+      <div class="caja valores">
+        <div class="valor"><b class="grad-txt">+35</b><span>Años de trayectoria profesional</span></div>
+        <div class="valor"><b class="grad-txt">+60</b><span>Proyectos en el portafolio</span></div>
+        <div class="valor"><b class="grad-txt">+212.000</b><span>m² en proyectos supervisados</span></div>
+        <div class="valor"><b class="grad-txt">24</b><span>Pisos: edificación más alta</span></div>
+      </div>
+    </div>
+    <div class="eq-grid">
+      <div class="eq"><div class="avatar"><img src="data:image/webp;base64,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" alt="Ing. Carlos Julio Arboleda" loading="lazy"></div><div>
+        <h3>Ing. Carlos Julio Arboleda</h3><span class="rol">Ingeniero Civil · Especialista en Ingeniería Estructural</span><span class="exp">Más de 35 años de experiencia</span>
+        <ul><li><b>Pregrado:</b> Ingeniería Civil, Universidad del Quindío</li><li><b>Posgrado:</b> Maestría en Estructuras, Universidad de los Andes</li><li><b>Enfoque:</b> Ingeniería y diseño estructural</li></ul>
+        <a class="wa-btn" href="https://wa.me/573116351574" target="_blank" rel="noopener"><svg width="18" height="18"><use href="#wa"/></svg>+57 311 635 1574</a></div></div>
+      <div class="eq"><div class="avatar"><img src="data:image/webp;base64,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" alt="Ing. Julián David Arboleda" loading="lazy"></div><div>
+        <h3>Ing. Julián David Arboleda</h3><span class="rol">Ingeniero Civil</span><span class="exp">Más de 8 años de experiencia</span>
+        <ul><li><b>Pregrado:</b> Ingeniería Civil, Universidad del Quindío</li><li><b>Posgrado:</b> Maestría, Universidad del Quindío</li><li><b>Enfoque:</b> Ingeniería estructural, supervisión técnica y construcción</li><li><b>Matrícula:</b> 131037-0681246 QND</li></ul>
+        <a class="wa-btn" href="https://wa.me/573017007518" target="_blank" rel="noopener"><svg width="18" height="18"><use href="#wa"/></svg>+57 301 700 7518</a></div></div>
+    </div>
+    <div class="aliado"><div class="ic">EF</div><div>
+      <b>Trabajo conjunto con Elemento Finito Ingeniería S.A.S.</b>
+      <p>Arboleda Ingenieros S.A.S. desarrolla proyectos de manera conjunta con Elemento Finito Ingeniería S.A.S. Son empresas independientes que suman su experiencia en ingeniería estructural.</p>
+    </div></div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="view" id="contacto">
+  <div class="wrap">
+    <div class="vh">
+      <div><span class="tag">Contacto</span><h1>¿Tienes un proyecto<br><span class="grad-txt">en mente?</span></h1></div>
+      <p>Cuéntanos sobre tu obra y te enviamos una propuesta a la medida.</p>
+    </div>
+    <div class="cgrid">
+      <div>
+        <div class="cards">
+          <a class="ccard" href="https://www.google.com/maps/search/?api=1&query=La+Plazuela+Armenia+Quindio" target="_blank" rel="noopener"><div class="ic"><svg width="22" height="22" style="color:#F06A2C"><use href="#pin"/></svg></div><div><small>Oficina</small><b>La Plazuela, Apto 703 – Armenia, Quindío</b></div></a>
+          <a class="ccard" href="https://wa.me/573116351574" target="_blank" rel="noopener"><div class="ic" style="background:#25D366"><svg width="22" height="22"><use href="#wa"/></svg></div><div><small>Ing. Carlos Julio Arboleda</small><b>+57 311 635 1574</b></div></a>
+          <a class="ccard" href="https://wa.me/573017007518" target="_blank" rel="noopener"><div class="ic" style="background:#25D366"><svg width="22" height="22"><use href="#wa"/></svg></div><div><small>Ing. Julián David Arboleda</small><b>+57 301 700 7518</b></div></a>
+          <a class="ccard" href="https://www.instagram.com/arboledaingenieros/" target="_blank" rel="noopener"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F06A2C" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#F06A2C"/></svg></div><div><small>Instagram</small><b>@arboledaingenieros</b></div></a>
+        </div>
+        <div class="faq">
+          <span class="tag">Preguntas frecuentes</span>
+          <h3>Resolvemos tus dudas</h3>
+          <details><summary>¿Necesito un diseño estructural para construir mi casa?</summary><p>Sí. Para la licencia de construcción en Colombia se requieren planos y memorias estructurales firmados por un ingeniero civil con matrícula profesional, conforme a la NSR-10.</p></details>
+          <details><summary>¿Qué es la supervisión técnica independiente?</summary><p>Es la verificación, durante la construcción, de que la obra se ejecute según los planos y especificaciones del diseño estructural. Es obligatoria en ciertos proyectos según la Ley 1796 de 2016.</p></details>
+          <details><summary>¿Pueden evaluar una edificación existente?</summary><p>Sí. Hacemos estudios de vulnerabilidad sísmica, peritajes y propuestas de reforzamiento para ampliaciones o cambios de uso.</p></details>
+          <details><summary>¿En qué zonas trabajan?</summary><p>Armenia y todo el Quindío, Pereira y Risaralda, y en general el Eje Cafetero.</p></details>
+        </div>
+      </div>
+      <form id="form">
+        <h3>Solicita tu cotización</h3>
+        <div class="fila">
+          <div class="campo"><label for="n">Nombre</label><input id="n" name="nombre" required></div>
+          <div class="campo"><label for="t">Teléfono</label><input id="t" name="telefono" type="tel" required></div>
+        </div>
+        <div class="fila">
+          <div class="campo"><label for="s">Servicio</label><select id="s" name="servicio"></select></div>
+          <div class="campo"><label for="w">Enviar a</label><select id="w" name="destino">
+            <option value="573116351574">Ing. Carlos Julio Arboleda</option>
+            <option value="573017007518">Ing. Julián David Arboleda</option></select></div>
+        </div>
+        <div class="campo"><label for="c">Ciudad de la obra</label><input id="c" name="ciudad" placeholder="Ej: Armenia"></div>
+        <div class="campo"><label for="m">Cuéntanos de tu proyecto</label><textarea id="m" name="mensaje" rows="5" placeholder="Tipo de obra, número de pisos, área aproximada…"></textarea></div>
+        <label class="chk"><input type="checkbox" name="autoriza" required><span>Autorizo a Arboleda Ingenieros S.A.S. a tratar mis datos para responder esta solicitud, según su <a href="#privacidad">Política de tratamiento de datos</a> (Ley 1581 de 2012).</span></label>
+        <button class="btn btn-p" type="submit"><svg width="18" height="18"><use href="#wa"/></svg>Enviar por WhatsApp</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TÉRMINOS ============ -->
+<section class="view" id="terminos">
+  <div class="wrap legal">
+    <span class="tag">Legal</span>
+    <h1>Términos y condiciones de uso</h1>
+    <p class="vig">Vigentes desde el 23 de noviembre de 2026</p>
+
+    <h2>1. Quiénes somos</h2>
+    <p>Este sitio web pertenece a <b>Arboleda Ingenieros S.A.S.</b>, sociedad colombiana con oficina en La Plazuela, Apto 703, Armenia, Quindío. Al navegar por el sitio aceptas estos términos. Si no estás de acuerdo con ellos, te pedimos no usarlo.</p>
+
+    <h2>2. Para qué sirve este sitio</h2>
+    <p>El sitio es informativo: presenta a la firma, sus servicios de ingeniería estructural y su experiencia. Nada de lo publicado constituye una oferta comercial vinculante. Los alcances, precios y plazos de cada servicio se acuerdan únicamente mediante propuesta o contrato escrito.</p>
+
+    <h2>3. La información técnica no reemplaza un estudio</h2>
+    <p>Los textos sobre la NSR-10, la Ley 400 de 1997, la Ley 1796 de 2016 y demás temas técnicos son orientativos y generales. No sustituyen un diseño, una revisión o un concepto elaborado para tu proyecto específico por un ingeniero con matrícula profesional vigente. No respondemos por decisiones tomadas solo con base en la información general de este sitio.</p>
+
+    <h2>4. Portafolio de proyectos</h2>
+    <p>Los proyectos se publican como referencia de experiencia profesional. Los datos de áreas, pisos, ubicación y estado son aproximados y pueden haber cambiado desde su registro. Algunos trabajos se ejecutaron en conjunto con Elemento Finito Ingeniería S.A.S., que es una sociedad independiente.</p>
+    <p>Los nombres de proyectos, constructoras, entidades y marcas mencionados pertenecen a sus respectivos titulares. Su mención solo describe la participación técnica de la firma y no implica que esas personas o entidades patrocinen o respalden este sitio.</p>
+
+    <h2>5. Propiedad intelectual</h2>
+    <p>Los textos, el diseño gráfico, el logotipo y demás contenidos propios del sitio están protegidos por la Ley 23 de 1982, la Decisión Andina 351 de 1993 y demás normas sobre derechos de autor y propiedad industrial. Puedes compartir enlaces al sitio, pero no copiar, modificar ni usar sus contenidos con fines comerciales sin autorización escrita de Arboleda Ingenieros S.A.S.</p>
+
+    <h2>6. Comunicaciones por medios electrónicos</h2>
+    <p>El formulario de cotización abre una conversación de WhatsApp con el ingeniero que elijas. Los mensajes enviados por WhatsApp, Instagram u otros medios electrónicos tienen valor como mensajes de datos según la Ley 527 de 1999. Enviar un mensaje no crea por sí solo una relación contractual.</p>
+
+    <h2>7. Servicios y enlaces de terceros</h2>
+    <p>El sitio enlaza a WhatsApp, Instagram y Google Maps, y usa tipografías de Google Fonts. Esos servicios tienen sus propios términos y políticas de privacidad, sobre los cuales Arboleda Ingenieros S.A.S. no tiene control.</p>
+
+    <h2>8. Disponibilidad y responsabilidad</h2>
+    <p>Procuramos que el sitio funcione de forma continua y que su información esté actualizada, pero no garantizamos que esté libre de interrupciones o errores. Podemos cambiar o retirar contenidos en cualquier momento.</p>
+
+    <h2>9. Derechos como consumidor</h2>
+    <p>Cuando la persona que contrata nuestros servicios tenga la calidad de consumidor, aplicarán los derechos que le otorga la Ley 1480 de 2011 (Estatuto del Consumidor), que estos términos no limitan.</p>
+
+    <h2>10. Datos personales</h2>
+    <p>El tratamiento de los datos que nos compartes se rige por nuestra <a href="#privacidad">Política de tratamiento de datos personales</a>, conforme a la Ley 1581 de 2012.</p>
+
+    <h2>11. Ley aplicable</h2>
+    <p>Estos términos se rigen por las leyes de la República de Colombia. Cualquier controversia se intentará resolver primero de forma directa. Si no es posible, se acudirá a los jueces competentes de Armenia, Quindío, sin perjuicio de los derechos que la ley otorga a los consumidores.</p>
+
+    <h2>12. Cambios y contacto</h2>
+    <p>Podemos actualizar estos términos. La versión vigente será siempre la publicada aquí, con su fecha. Para cualquier duda puedes escribirnos por:</p>
+    <ul>
+  <li><b>WhatsApp:</b> +57 311 635 1574 (Ing. Carlos Julio Arboleda) o +57 301 700 7518 (Ing. Julián David Arboleda).</li>
+  <li><b>Instagram:</b> mensaje directo a @arboledaingenieros.</li>
+  <li><b>Correspondencia física:</b> La Plazuela, Apto 703, Armenia, Quindío.</li>
+</ul>
+  </div>
+</section>
+
+<!-- ============ PRIVACIDAD ============ -->
+<section class="view" id="privacidad">
+  <div class="wrap legal">
+    <span class="tag">Legal</span>
+    <h1>Política de tratamiento de datos personales</h1>
+    <p class="vig">Vigente desde el 23 de noviembre de 2026</p>
+
+    <h2>1. Responsable del tratamiento</h2>
+    <p><b>Arboleda Ingenieros S.A.S.</b>, con oficina en La Plazuela, Apto 703, Armenia, Quindío, Colombia. Esta política cumple la Ley Estatutaria 1581 de 2012 y el Decreto Único Reglamentario 1074 de 2015, que compila el Decreto 1377 de 2013.</p>
+    <p>Canales de atención:</p>
+    <ul>
+  <li><b>WhatsApp:</b> +57 311 635 1574 (Ing. Carlos Julio Arboleda) o +57 301 700 7518 (Ing. Julián David Arboleda).</li>
+  <li><b>Instagram:</b> mensaje directo a @arboledaingenieros.</li>
+  <li><b>Correspondencia física:</b> La Plazuela, Apto 703, Armenia, Quindío.</li>
+</ul>
+
+    <h2>2. Qué datos recogemos</h2>
+    <p>Solo los que tú nos das al pedir una cotización o escribirnos: nombre, número de teléfono, ciudad de la obra y la descripción de tu proyecto. No pedimos datos sensibles ni recogemos a sabiendas datos de menores de edad.</p>
+    <p>Este sitio no usa cookies propias ni herramientas de analítica o publicidad. Al cargar las tipografías de Google Fonts, Google puede recibir datos técnicos de tu navegador, como la dirección IP.</p>
+
+    <h2>3. Para qué los usamos</h2>
+    <ul>
+      <li>Responder tu solicitud y preparar una propuesta o cotización.</li>
+      <li>Contactarte sobre tu proyecto y, si nos contratas, ejecutar y administrar el servicio.</li>
+      <li>Cumplir obligaciones legales, contables y tributarias.</li>
+    </ul>
+    <p>No vendemos ni cedemos tus datos. No los usamos para publicidad masiva sin tu autorización expresa.</p>
+
+    <h2>4. Autorización</h2>
+    <p>Al marcar la casilla del formulario y enviar tu mensaje, autorizas de forma previa, expresa e informada el tratamiento de tus datos para las finalidades anteriores. El texto de autorización queda incluido en el mensaje que nos envías, como prueba de ella.</p>
+
+    <h2>5. Con quién se comparten</h2>
+    <p>Tu solicitud llega por WhatsApp, un servicio de Meta Platforms que puede almacenar la información fuera de Colombia según sus propias políticas. Dentro de la firma, tus datos solo los conocen los ingenieros que atienden tu proyecto. Si el proyecto se ejecuta en conjunto con Elemento Finito Ingeniería S.A.S., podremos compartirle la información necesaria para ese fin.</p>
+
+    <h2>6. Tus derechos</h2>
+    <p>Según el artículo 8 de la Ley 1581 de 2012, como titular puedes:</p>
+    <ul>
+      <li>Conocer, actualizar y rectificar tus datos.</li>
+      <li>Pedir prueba de la autorización que nos diste.</li>
+      <li>Saber qué uso le hemos dado a tus datos.</li>
+      <li>Revocar la autorización o pedir que borremos tus datos, cuando no exista un deber legal o contractual de conservarlos.</li>
+      <li>Acceder gratuitamente a tus datos.</li>
+      <li>Presentar quejas ante la Superintendencia de Industria y Comercio, después de haber hecho tu consulta o reclamo ante nosotros.</li>
+    </ul>
+
+    <h2>7. Cómo ejercerlos</h2>
+    <p>Escríbenos por cualquiera de los canales indicados arriba con tu nombre, tu número de contacto y lo que solicitas.</p>
+    <ul>
+      <li><b>Consultas:</b> respondemos en máximo 10 días hábiles. Si no es posible, te avisaremos el motivo y responderemos en máximo 5 días hábiles más.</li>
+      <li><b>Reclamos</b> (corrección, actualización, supresión o incumplimiento): respondemos en máximo 15 días hábiles. Si no es posible, te avisaremos el motivo y responderemos en máximo 8 días hábiles más.</li>
+    </ul>
+
+    <h2>8. Seguridad y conservación</h2>
+    <p>Aplicamos medidas razonables para proteger tus datos contra pérdida, acceso no autorizado o uso indebido. Los conservamos mientras sean necesarios para atender tu solicitud o la relación contractual, y durante los plazos que exija la ley.</p>
+
+    <h2>9. Cambios a esta política</h2>
+    <p>Cualquier cambio sustancial se publicará en esta página con su nueva fecha de vigencia.</p>
+  </div>
+</section>
+</main>
+
+<footer id="foot">
+  <div class="wrap foot"><span>© <span id="y"></span> Arboleda Ingenieros S.A.S. · Ingeniería estructural, supervisión técnica e interventoría</span><span><a href="#terminos">Términos y condiciones</a> · <a href="#privacidad">Tratamiento de datos</a> · La Plazuela, Apto 703 – Armenia, Quindío</span></div>
+</footer>
+
+<!-- Modal proyecto -->
+<div class="modal" id="modal">
+  <div class="mbox" style="position:relative">
+    <button class="cerrar" id="cerrar" aria-label="Cerrar">✕</button>
+    
+    <div class="minfo">
+      <span class="tag" id="mCat"></span>
+      <h2 id="mTit"></h2>
+      <div class="loc"><svg width="16" height="16"><use href="#pin"/></svg><span id="mLoc"></span></div>
+      <p id="mDesc"></p>
+      <div class="fichas" id="mFichas"></div>
+      <div class="mnav">
+        <button class="circ" id="prev" aria-label="Anterior">←</button>
+        <button class="circ" id="next" aria-label="Siguiente">→</button>
+        <span id="mEst"></span><a class="btn btn-p" href="#contacto" id="mCta" style="margin-left:auto">Quiero un proyecto así</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav class="bbar" id="bbar">
+  <a href="#inicio"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8v10a1 1 0 01-1 1h-5v-7H9v7H4a1 1 0 01-1-1z"/></svg>Inicio</a>
+  <a href="#nosotros"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="4"/><path d="M2 21c0-4 3-6 7-6s7 2 7 6"/></svg>Nosotros</a>
+  <a href="#servicios"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V8l7-5 7 5v13"/></svg>Servicios</a>
+  <a href="#proyectos"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>Proyectos</a>
+  <a href="#contacto"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Contacto</a>
+</nav>
+
+<a class="wa-flot" href="https://wa.me/573116351574" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="30" height="30"><use href="#wa"/></svg></a>
+
+<script>
+/* ---------- DATOS (edita aquí) ----------
+   Categorías del portafolio. Un proyecto puede tener varias (f:["diseno","super"]):
+   se muestra en cada filtro pero se cuenta una sola vez. */
+const CATEGORIAS = {
+  diseno:"Diseño y cálculo estructural",
+  revision:"Revisión estructural independiente",
+  super:"Supervisión técnica",
+  interv:"Interventoría",
+  vulne:"Vulnerabilidad y reforzamiento",
+  peritaje:"Peritajes, informes y mantenimiento"
+};
+const AREAS = ["Edificaciones", "Urbanismo y vivienda", "Institucional, salud y educación", "Transporte por cable", "Puentes e infraestructura vial", "Estructuras especiales"];
+const PROYECTOS = [
+{
+"f": [
+"diseno",
+"super"
+],
+"a": "Edificaciones",
+"tit": "Torre Blend",
+"loc": "Pereira, Risaralda",
+"cli": "Constructora Blend",
+"pisos": "17",
+"area": "9.000 m²",
+"det": "",
+"ej": 1
+},
+{
+"f": [
+"diseno"
+],
+"a": "Edificaciones",
+"tit": "Torre Empresarial AC Marriott",
+"loc": "Armenia, Quindío",
+"cli": "Constructora Márquez y Fajardo – Promotora Integral de Proyectos",
+"pisos": "13",
+"area": "",
+"det": "",
+"ej": 1
+},
+{
+"f": [
+"diseno"
+],
+"a": "Edificaciones",
+"tit": "La Reserva – Bloques 1 y 2",
+"loc": "Pereira, Risaralda",
+"cli": "Constructora Blend",
+"pisos": "6",
+"area": "",
+"det": "",
+"ej": 1
+},
+{
+"f": [
+"diseno"
+],
+"a": "Edificaciones",
+"tit": "Babilla District – Centro comercial, clínica y hotel",
+"loc": "Cali, Valle del Cauca",
+"cli": "Fundación Ingeniería y Construcción Social",
+"pisos": "",
+"area": "",
+"det": "",
+"ej": 1
+},
+{
+"f": [
+"diseno"
+],
+"a": "Edificaciones",
+"tit": "Torre Pinamar",
+"loc": "Pereira, Risaralda",
+"cli": "",
+"pisos": "24",
+"area": "18.000 m²",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno",
+"super"
+],
+"a": "Edificaciones",
+"tit": "Torre Epic Pinares",
+"loc": "",
+"cli": "",
+"pisos": "20",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"revision"
+],
+"a": "Edificaciones",
+"tit": "Torre Fundadores",
+"loc": "Armenia, Quindío",
+"cli": "Constructora Constructum",
+"pisos": "20",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Edificaciones",
+"tit": "360° Calima – Torre 1",
+"loc": "Armenia, Quindío",
+"cli": "Constructora AIA Medellín",
+"pisos": "19",
+"area": "10.000 m²",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"super"
+],
+"a": "Edificaciones",
+"tit": "Torre Epic Castellana",
+"loc": "Pereira, Risaralda",
+"cli": "Constructora RSI",
+"pisos": "19",
+"area": "20.000 m²",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"revision"
+],
+"a": "Edificaciones",
+"tit": "Torres Filadelfia",
+"loc": "Armenia, Quindío",
+"cli": "Constructora Filadelfia S.A.S.",
+"pisos": "19",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Edificaciones",
+"tit": "360° Calima – Torre 2",
+"loc": "Armenia, Quindío",
+"cli": "Constructora AIA Medellín",
+"pisos": "18",
+"area": "10.000 m²",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Edificaciones",
+"tit": "Zonata – Torre 4",
+"loc": "Armenia, Quindío",
+"cli": "Constructora Márquez y Fajardo – Promotora Integral de Proyectos",
+"pisos": "18",
+"area": "9.000 m²",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno",
+"super"
+],
+"a": "Edificaciones",
+"tit": "Torre Epic Laureles",
+"loc": "",
+"cli": "",
+"pisos": "16",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Edificaciones",
+"tit": "Hacienda El Cortijo Elite",
+"loc": "Armenia, Quindío",
+"cli": "Constructora Buendía y López",
+"pisos": "15",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Edificaciones",
+"tit": "Hacienda El Cortijo Premium – Torre B",
+"loc": "Armenia, Quindío",
+"cli": "Constructora Buendía y López",
+"pisos": "15",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"super"
+],
+"a": "Edificaciones",
+"tit": "Hacienda El Cortijo – Torre 3",
+"loc": "Armenia, Quindío",
+"cli": "Constructora Buendía y López",
+"pisos": "15",
+"area": "12.000 m²",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Edificaciones",
+"tit": "Torre Kalua",
+"loc": "Armenia, Quindío",
+"cli": "Constructora Márquez y Fajardo – Promotora Integral de Proyectos",
+"pisos": "15",
+"area": "10.000 m²",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"super"
+],
+"a": "Edificaciones",
+"tit": "Torres Marawi",
+"loc": "Armenia, Quindío",
+"cli": "Constructora Uraki",
+"pisos": "15 y 9",
+"area": "23.000 m²",
+"det": "Dos torres de 15 pisos y un bloque de 9 pisos.",
+"ej": 0
+},
+{
+"f": [
+"revision"
+],
+"a": "Edificaciones",
+"tit": "Torre Sierra Viento",
+"loc": "Pereira, Risaralda",
+"cli": "Constructora Palacios",
+"pisos": "12",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Edificaciones",
+"tit": "Torre Yala Suites",
+"loc": "Armenia, Quindío",
+"cli": "Julián Escobar",
+"pisos": "11",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Edificaciones",
+"tit": "Torre Bellagio",
+"loc": "Armenia, Quindío",
+"cli": "Constructora Buendía y López",
+"pisos": "10",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Edificaciones",
+"tit": "Torre Calle 10",
+"loc": "Armenia, Quindío",
+"cli": "Constructora Javier Osorio",
+"pisos": "10",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Edificaciones",
+"tit": "Hacienda El Cortijo Sunset",
+"loc": "Armenia, Quindío",
+"cli": "Constructora Buendía y López",
+"pisos": "8",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Edificaciones",
+"tit": "Hacienda El Cortijo Premium – Parqueaderos Norte",
+"loc": "Armenia, Quindío",
+"cli": "Constructora Buendía y López",
+"pisos": "5",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Edificaciones",
+"tit": "Caña Viva",
+"loc": "Pereira, Risaralda",
+"cli": "Constructora RSI Risaralda Su Inversión",
+"pisos": "",
+"area": "",
+"det": "Cimentación y estructura en concreto reforzado.",
+"ej": 0
+},
+{
+"f": [
+"revision"
+],
+"a": "Edificaciones",
+"tit": "Torre Epic – Revisión de diseño",
+"loc": "Armenia, Quindío",
+"cli": "Constructora RSI",
+"pisos": "",
+"area": "10.000 m²",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno",
+"super"
+],
+"a": "Edificaciones",
+"tit": "Torres Toscana",
+"loc": "Pereira, Risaralda",
+"cli": "Constructora Buendía y López",
+"pisos": "",
+"area": "25.000 m²",
+"det": "Dos torres.",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Edificaciones",
+"tit": "Zonata – Parqueaderos Torre 3",
+"loc": "Armenia, Quindío",
+"cli": "Constructora Márquez y Fajardo – Promotora Integral de Proyectos",
+"pisos": "",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno",
+"super"
+],
+"a": "Edificaciones",
+"tit": "Zonata – Torre 3",
+"loc": "Armenia, Quindío",
+"cli": "Constructora Márquez y Fajardo – Promotora Integral de Proyectos",
+"pisos": "",
+"area": "15.000 m²",
+"det": "Una torre de 15 pisos y un bloque de parqueaderos de 3 pisos.",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Urbanismo y vivienda",
+"tit": "637 viviendas VIS y VIP – Calarcá",
+"loc": "Calarcá, Quindío",
+"cli": "Proyecta – Unión Temporal TQV",
+"pisos": "",
+"area": "",
+"det": "",
+"ej": 1
+},
+{
+"f": [
+"super"
+],
+"a": "Urbanismo y vivienda",
+"tit": "Parque Residencial Los Molinos",
+"loc": "Dosquebradas, Risaralda",
+"cli": "Constructora Santa Teresita",
+"pisos": "15",
+"area": "18.000 m²",
+"det": "Dos torres.",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Urbanismo y vivienda",
+"tit": "Urbanización Arborettum",
+"loc": "Armenia, Quindío",
+"cli": "Constructora CAMU",
+"pisos": "15",
+"area": "",
+"det": "Dos bloques.",
+"ej": 0
+},
+{
+"f": [
+"super"
+],
+"a": "Urbanismo y vivienda",
+"tit": "Proyecto Monserrat",
+"loc": "Armenia, Quindío",
+"cli": "Constructora Soriano",
+"pisos": "8 a 12",
+"area": "30.000 m²",
+"det": "Seis torres.",
+"ej": 0
+},
+{
+"f": [
+"diseno",
+"super"
+],
+"a": "Urbanismo y vivienda",
+"tit": "Urbanización Cañadulce",
+"loc": "Pereira, Risaralda",
+"cli": "Constructora RSI",
+"pisos": "5 y 11",
+"area": "8.000 m²",
+"det": "Dos bloques de 5 pisos y una torre de 11 pisos.",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Urbanismo y vivienda",
+"tit": "Urbanización Puerta del Edén",
+"loc": "",
+"cli": "",
+"pisos": "4",
+"area": "",
+"det": "30 bloques",
+"ej": 0
+},
+{
+"f": [
+"revision"
+],
+"a": "Institucional, salud y educación",
+"tit": "Medicentro Alcázar",
+"loc": "Armenia, Quindío",
+"cli": "Constructora AXM",
+"pisos": "10",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"revision",
+"super"
+],
+"a": "Institucional, salud y educación",
+"tit": "Centro Médico Zonata",
+"loc": "Armenia, Quindío",
+"cli": "Constructora Márquez y Fajardo – Promotora Integral de Proyectos",
+"pisos": "",
+"area": "22.000 m²",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Institucional, salud y educación",
+"tit": "Colegios de Palmira – 10 instituciones",
+"loc": "Palmira, Valle del Cauca",
+"cli": "",
+"pisos": "",
+"area": "",
+"det": "María Antonia Penagos, Alfonso López, Juan Pablo II, Cárdenas Centro, Raffo Rivera, Palmar, Rogeiro Vásquez, José María Vivas, Tablones y Rosa Zárate.",
+"ej": 0
+},
+{
+"f": [
+"vulne"
+],
+"a": "Institucional, salud y educación",
+"tit": "Hospital San Rafael de El Espinal",
+"loc": "El Espinal, Tolima",
+"cli": "Constructora Proesas",
+"pisos": "",
+"area": "11.000 m²",
+"det": "Refuerzo de estructura metálica.",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Institucional, salud y educación",
+"tit": "Preescolar GI School",
+"loc": "Salento, Quindío",
+"cli": "Fundación Gimnasio Inglés",
+"pisos": "",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Transporte por cable",
+"tit": "Cable Aéreo Salento – Fase 3",
+"loc": "Salento, Quindío",
+"cli": "APP Salento · Constructora Márquez y Fajardo – Promotora Integral de Proyectos",
+"pisos": "",
+"area": "",
+"det": "",
+"ej": 1
+},
+{
+"f": [
+"diseno"
+],
+"a": "Transporte por cable",
+"tit": "Cable Aéreo El Santísimo",
+"loc": "Bucaramanga, Santander",
+"cli": "",
+"pisos": "",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Transporte por cable",
+"tit": "Cable Aéreo Manizales – Línea 3",
+"loc": "Manizales, Caldas",
+"cli": "Unión Temporal Cable Aéreo Línea 3",
+"pisos": "",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Transporte por cable",
+"tit": "Cable Aéreo Salento – Fase 2",
+"loc": "Salento, Quindío",
+"cli": "APP Salento · Constructora Márquez y Fajardo – Promotora Integral de Proyectos",
+"pisos": "",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"peritaje"
+],
+"a": "Transporte por cable",
+"tit": "Teleférico Los Yarumos",
+"loc": "Manizales, Caldas",
+"cli": "ISTC – FONTUR",
+"pisos": "",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Transporte por cable",
+"tit": "Teleférico Parque Nacional del Café – Estación motriz",
+"loc": "Montenegro, Quindío",
+"cli": "Parque Nacional del Café",
+"pisos": "",
+"area": "",
+"det": "Ampliación de la estación motriz.",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Transporte por cable",
+"tit": "Teleférico Santafé de Bogotá – San Rafael",
+"loc": "Bogotá, D. C.",
+"cli": "ISTC – Acueducto de Bogotá",
+"pisos": "",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Transporte por cable",
+"tit": "Teleférico Torreón",
+"loc": "Torreón, México",
+"cli": "",
+"pisos": "",
+"area": "",
+"det": "Torres y estaciones.",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Puentes e infraestructura vial",
+"tit": "Ampliación vía Calarcá–Cajamarca–La Línea",
+"loc": "Calarcá–Cajamarca, Colombia",
+"cli": "INVIAS",
+"pisos": "",
+"area": "",
+"det": "Diseño estructural de seis muros de contención.",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Puentes e infraestructura vial",
+"tit": "Muros de contención – Las Fresas, Aguacatal",
+"loc": "Cali, Valle del Cauca",
+"cli": "INVIAS",
+"pisos": "",
+"area": "",
+"det": "Dos muros de contención.",
+"ej": 0
+},
+{
+"f": [
+"interv"
+],
+"a": "Puentes e infraestructura vial",
+"tit": "Puente Caño Seco",
+"loc": "Valle del Cauca",
+"cli": "INVIAS",
+"pisos": "",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"interv"
+],
+"a": "Puentes e infraestructura vial",
+"tit": "Puente Crucero – Dapa",
+"loc": "Valle del Cauca",
+"cli": "INVIAS",
+"pisos": "",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"peritaje"
+],
+"a": "Puentes e infraestructura vial",
+"tit": "Puente Hisgaura",
+"loc": "Vía Los Curos–Málaga, Santander",
+"cli": "Fondo Adaptación – INVIAS",
+"pisos": "",
+"area": "",
+"det": "Longitud 680 m.",
+"ej": 0
+},
+{
+"f": [
+"interv"
+],
+"a": "Puentes e infraestructura vial",
+"tit": "Puente Lago Búfalos",
+"loc": "Valle del Cauca",
+"cli": "INVIAS",
+"pisos": "",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"interv"
+],
+"a": "Puentes e infraestructura vial",
+"tit": "Puente Río León",
+"loc": "Valle del Cauca",
+"cli": "INVIAS",
+"pisos": "",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"interv"
+],
+"a": "Puentes e infraestructura vial",
+"tit": "Puente Valladolid – Apía",
+"loc": "Risaralda",
+"cli": "INVIAS",
+"pisos": "",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"interv"
+],
+"a": "Puentes e infraestructura vial",
+"tit": "Puente Vereda El 10",
+"loc": "Valle del Cauca",
+"cli": "INVIAS",
+"pisos": "",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"peritaje"
+],
+"a": "Puentes e infraestructura vial",
+"tit": "Puente colgante Parque del Café",
+"loc": "Montenegro, Quindío",
+"cli": "Parque del Café",
+"pisos": "",
+"area": "",
+"det": "Longitud 80 m.",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Puentes e infraestructura vial",
+"tit": "Puente vehicular Parque del Café",
+"loc": "Montenegro, Quindío",
+"cli": "Parque del Café",
+"pisos": "",
+"area": "",
+"det": "Longitud 20 m.",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Puentes e infraestructura vial",
+"tit": "Puente vehicular Puente Rojo 2",
+"loc": "La Virginia",
+"cli": "",
+"pisos": "",
+"area": "",
+"det": "Longitud 25 m.",
+"ej": 0
+},
+{
+"f": [
+"interv"
+],
+"a": "Puentes e infraestructura vial",
+"tit": "Puentes Cali–Juanchito",
+"loc": "Valle del Cauca",
+"cli": "INVIAS",
+"pisos": "",
+"area": "",
+"det": "Dos puentes de 300 m; voladizos sucesivos y aisladores sísmicos.",
+"ej": 0
+},
+{
+"f": [
+"interv"
+],
+"a": "Puentes e infraestructura vial",
+"tit": "Vía Huila K0+950",
+"loc": "Cauca",
+"cli": "INVIAS",
+"pisos": "",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Estructuras especiales",
+"tit": "Cubierta Show del Café",
+"loc": "Montenegro, Quindío",
+"cli": "Parque Nacional de la Cultura Cafetera",
+"pisos": "",
+"area": "",
+"det": "",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Estructuras especiales",
+"tit": "Montaña rusa Krater – Cimentación",
+"loc": "Montenegro, Quindío",
+"cli": "Parque Nacional de la Cultura Cafetera",
+"pisos": "",
+"area": "",
+"det": "Cimentación de atracción mecánica.",
+"ej": 0
+},
+{
+"f": [
+"diseno"
+],
+"a": "Estructuras especiales",
+"tit": "Planta de Silos",
+"loc": "Pereira, Risaralda",
+"cli": "",
+"pisos": "",
+"area": "",
+"det": "Estructura metálica de soporte y plataformas de acceso para planta industrial.",
+"ej": 0
+},
+{
+"f": [
+"vulne"
+],
+"a": "Estructuras especiales",
+"tit": "Tanque de agua potable – Armenia",
+"loc": "Armenia, Quindío",
+"cli": "Corbones",
+"pisos": "",
+"area": "",
+"det": "Tanque de abastecimiento; capacidad 5.000 m³.",
+"ej": 0
+}
+];
+const SERVICIOS = [
+  {t:"Diseño y Cálculo Estructural", s:"Planos y memorias para licencia", d:"Diseñamos la estructura de tu proyecto en concreto, acero o mampostería, con todo lo necesario para tramitar la licencia de construcción bajo la NSR-10.",
+   l:["Modelación y análisis sísmico","Planos estructurales y de despiece","Memorias de cálculo firmadas","Diseño de cimentaciones"]},
+  {t:"Revisión Estructural Independiente", s:"Ley 1796 de 2016", d:"Revisamos diseños estructurales elaborados por terceros para verificar que cumplan la NSR-10 antes de la licencia.",
+   l:["Revisión de planos y memorias","Verificación del análisis sísmico","Informe de observaciones","Concepto final de revisión"]},
+  {t:"Supervisión Técnica", s:"Ley 1796 y NSR-10", d:"Verificamos de forma independiente que la obra se construya exactamente como fue diseñada.",
+   l:["Control de materiales y ensayos","Revisión de refuerzo antes de fundir","Informes periódicos de obra","Certificación de supervisión"]},
+  {t:"Interventoría de Obra", s:"Control técnico y administrativo", d:"Controlamos la ejecución de contratos de obra pública y privada en lo técnico, administrativo y financiero.",
+   l:["Seguimiento de cronograma y presupuesto","Control de calidad","Actas y balances de obra","Acompañamiento hasta la liquidación"]},
+  {t:"Vulnerabilidad y Reforzamiento", s:"Edificaciones existentes", d:"Evaluamos edificaciones existentes y diseñamos su reforzamiento para ampliaciones, cambios de uso o actualización sísmica.",
+   l:["Estudios de vulnerabilidad sísmica","Diseño de reforzamiento","Evaluación para ampliaciones","Cambios de uso"]},
+  {t:"Informes y Peritajes", s:"Diagnósticos técnicos", d:"Elaboramos diagnósticos e informes técnicos claros para tomar decisiones o resolver controversias.",
+   l:["Peritajes estructurales","Patologías de la construcción","Inspecciones técnicas","Conceptos técnicos"]}
+];
+
+/* ---------- NAVEGACIÓN ENTRE VISTAS ---------- */
+const vistas=[...document.querySelectorAll('.view')];
+const hdr=document.getElementById('hdr'), foot=document.getElementById('foot');
+let actual='inicio';
+function ir(dest,push){
+  let id=dest;
+  if(!id){try{id=(location.hash||'').slice(1)}catch(e){id=''}}
+  const v=document.getElementById(id)&&document.getElementById(id).classList.contains('view')?id:'inicio';
+  actual=v;
+  vistas.forEach(s=>s.classList.toggle('on',s.id===v));
+  document.querySelectorAll('.tabs a,.bbar a').forEach(a=>a.classList.toggle('act',a.getAttribute('href')==='#'+v));
+  try{window.scrollTo(0,0)}catch(e){}
+  hdr.classList.toggle('solid',v!=='inicio');
+  try{if(push&&location.hash!=='#'+v)history.pushState(null,'','#'+v);else history.replaceState(null,'','#'+v)}catch(e){}
+}
+/* Los enlaces internos se manejan con JS (funciona también dentro de vistas previas/iframes) */
+document.addEventListener('click',e=>{
+  const a=e.target.closest('a[href^="#"]');
+  if(!a)return;
+  e.preventDefault();
+  ir(a.getAttribute('href').slice(1),true);
+});
+addEventListener('popstate',()=>ir());
+addEventListener('hashchange',()=>ir());
+addEventListener('scroll',()=>hdr.classList.toggle('solid',scrollY>20||actual!=='inicio'));
+
+/* ---------- SERVICIOS ---------- */
+const sl=document.getElementById('svcList'), sd=document.getElementById('svcDet'), selS=document.getElementById('s');
+SERVICIOS.forEach((s,i)=>{
+  const b=document.createElement('button');b.className='svc';
+  b.innerHTML=`<span class="n">0${i+1}</span><div><b>${s.t}</b><small>${s.s}</small></div>`;
+  b.onclick=()=>verSvc(i);sl.appendChild(b);
+  selS.add(new Option(s.t,s.t));
+});
+function verSvc(i){
+  [...sl.children].forEach((b,j)=>b.classList.toggle('on',i===j));
+  const s=SERVICIOS[i];
+  sd.innerHTML=`<div class="fade"><span class="tag">Servicio 0${i+1}</span><h2>${s.t}</h2><p>${s.d}</p><ul>${s.l.map(x=>`<li>${x}</li>`).join('')}</ul>
+  <a href="#contacto" class="btn btn-p" onclick="document.getElementById('s').value='${s.t}'">Cotizar este servicio</a></div>`;
+}
+verSvc(0);
+
+/* ---------- PROYECTOS ---------- */
+const pg=document.getElementById('pgrid'), chips=document.getElementById('chips'), q=document.getElementById('q'), cuenta=document.getElementById('cuenta');
+const norm=s=>(s||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+let filtro='todos', vis=[];
+document.querySelector('.chip[data-f="todos"]').innerHTML=`Todos<b>${PROYECTOS.length}</b>`;
+Object.keys(CATEGORIAS).forEach(k=>{const n=PROYECTOS.filter(p=>p.f.includes(k)).length;if(!n)return;
+  const b=document.createElement('button');b.className='chip';b.dataset.f=k;b.innerHTML=`${CATEGORIAS[k]}<b>${n}</b>`;chips.appendChild(b);});
+const tarjeta=p=>{const i=PROYECTOS.indexOf(p);
+  const meta=[p.pisos&&`<span><b>${p.pisos}</b> pisos</span>`,p.area&&`<span><b>${p.area}</b></span>`,p.det&&`<span>${p.det}</span>`].filter(Boolean).join('');
+  return `<button class="pj" data-i="${i}"><span class="cats">${p.f.map(k=>`<i>${CATEGORIAS[k]}</i>`).join('')}</span><h3>${p.tit}</h3>
+  ${meta?`<span class="meta">${meta}</span>`:''}<span class="pie"><span>${[p.loc,p.cli].filter(Boolean).join(' · ')}</span>${p.ej?'<span class="est">En ejecución</span>':''}</span></button>`;};
+function pintaP(){
+  const txt=norm(q.value.trim());
+  vis=PROYECTOS.filter(p=>(filtro==='todos'||p.f.includes(filtro))&&(!txt||norm([p.tit,p.loc,p.cli,p.det,p.a].join(' ')).includes(txt)));
+  cuenta.textContent=`${vis.length} proyecto${vis.length===1?'':'s'}`;
+  if(!vis.length){pg.innerHTML='<p class="vacio">No encontramos proyectos con esa búsqueda.</p>';return}
+  if(filtro==='todos'&&!txt){
+    pg.innerHTML=AREAS.map(k=>{const g=vis.filter(p=>p.a===k);if(!g.length)return'';
+      return `<div class="grupo"><h2>${k}</h2><span>${g.length}</span></div><div class="lista">${g.map(tarjeta).join('')}</div>`}).join('');
+  }else pg.innerHTML=`<div class="lista">${vis.map(tarjeta).join('')}</div>`;
+}
+chips.addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;
+  chips.querySelectorAll('.chip').forEach(x=>x.classList.toggle('on',x===b));filtro=b.dataset.f;pintaP();});
+q.addEventListener('input',pintaP);
+pg.addEventListener('click',e=>{const b=e.target.closest('.pj');if(b)abrir(+b.dataset.i)});
+pintaP();
+const modal=document.getElementById('modal');let mi=0;
+function abrir(i){
+  mi=i;const p=PROYECTOS[i];
+  mCat.textContent=p.f.map(k=>CATEGORIAS[k]).join(' · ');mTit.textContent=p.tit;
+  mLoc.textContent=p.loc;mLoc.parentNode.style.display=p.loc?'':'none';mDesc.textContent=p.det||'';mDesc.style.display=p.det?'':'none';
+  const fi=[['Área',p.a],['Servicio',p.f.map(k=>CATEGORIAS[k]).join(' y ')],['Cliente / constructora',p.cli],['Pisos',p.pisos],['Área',p.area],['Ubicación',p.loc],['Estado',p.ej?'En ejecución':'']].filter(x=>x[1]);
+  mFichas.innerHTML=fi.map(([k,v])=>`<div class="ficha"><small>${k}</small><b>${v}</b></div>`).join('');
+  mEst.innerHTML='';modal.classList.add('on');document.body.style.overflow='hidden';
+}
+const mover=d=>{const l=vis.length?vis:PROYECTOS;const j=l.indexOf(PROYECTOS[mi]);abrir(PROYECTOS.indexOf(l[(j+d+l.length)%l.length]))};
+function cerrar(){modal.classList.remove('on');document.body.style.overflow=''}
+document.getElementById('cerrar').onclick=cerrar;
+document.getElementById('mCta').onclick=cerrar;
+modal.onclick=e=>{if(e.target===modal)cerrar()};
+prev.onclick=()=>mover(-1);next.onclick=()=>mover(1);
+addEventListener('keydown',e=>{if(!modal.classList.contains('on'))return;
+  if(e.key==='Escape')cerrar();if(e.key==='ArrowRight')mover(1);if(e.key==='ArrowLeft')mover(-1);});
+
+/* ---------- FORMULARIO → WHATSAPP ---------- */
+document.getElementById('form').onsubmit=e=>{
+  e.preventDefault();const d=new FormData(e.target);
+  const t=`Hola Arboleda Ingenieros, soy ${d.get('nombre')} (${d.get('telefono')}).\nServicio: ${d.get('servicio')}\nCiudad: ${d.get('ciudad')||'-'}\n${d.get('mensaje')}\n\nAutorizo a Arboleda Ingenieros S.A.S. el tratamiento de mis datos personales según su política (Ley 1581 de 2012).`;
+  const url=`https://wa.me/${d.get('destino')}?text=${encodeURIComponent(t)}`;
+  const w=window.open(url,'_blank');
+  if(!w){try{window.top.location.href=url}catch(err){location.href=url}}
+};
+document.getElementById('y').textContent=new Date().getFullYear();
+ir();
+</script>
+</body>
+</html>
